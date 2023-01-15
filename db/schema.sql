@@ -22,5 +22,9 @@ CREATE TABLE participants(
     last_name TEXT NOT NULL,
     email VARCHAR NOT NULL,
     phone_number VARCHAR,
+    token TEXT NOT NULL,
+    winner BOOLEAN,
     raffles_id INTEGER REFERENCES raffles(id) ON DELETE CASCADE
 );
+
+
