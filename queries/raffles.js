@@ -19,7 +19,7 @@ const createNewRaffle= async(newRaffle)=> {
 }
 
 const getOneParticipant = async(id) => {
-    return await db.any("select participants.id as id, participants.first_name as firstName, participants.last_name as lastName, participants.email as email, participants.phone_number as phoneNumber, raffles.id as raffle_id from participants join raffles on participants.raffles_id = raffles.id where raffles.id = $1", id)
+    return await db.any("select participants.id as id, participants.first_name as firstName, participants.last_name as lastName, participants.email as email, participants.phone_number as phoneNumber, participants.winner as winner, participants.token as token, raffles.id as raffle_id from participants join raffles on participants.raffles_id = raffles.id where raffles.id = $1", id)
 }
 
 const addNewParticipants = async(newParticipant) => {
