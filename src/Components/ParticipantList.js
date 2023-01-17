@@ -6,6 +6,7 @@ import {apiURL} from '../Utils/apiURL';
 import {useParams} from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import '../Styles/ParticipantList.scss'
+import PickAWinner from './PickAWinner';
 
 export default function ParticipantList () {
   const API = apiURL ();
@@ -29,6 +30,7 @@ export default function ParticipantList () {
   );
   console.log ('partcipants', partcipants);
   return (
+
     <div className='Participant-Container'>
 
       <NavBar id={id} partcipant={partcipants}/>
@@ -36,6 +38,7 @@ export default function ParticipantList () {
       Participant List
 
 </div>
+      {/* <PickAWinner partcipant={partcipants}/> */}
       <br/>
       <br/>
       <input 
