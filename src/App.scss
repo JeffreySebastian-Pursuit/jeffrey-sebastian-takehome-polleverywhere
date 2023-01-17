@@ -1,0 +1,30 @@
+$ruler: 16px;
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+
+
+body{
+    background-color:$color-bg;
+
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid $color-shadow;
+    max-width: 950px; 
+    height: 90vh;
+    margin: 60px auto; 
+
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+

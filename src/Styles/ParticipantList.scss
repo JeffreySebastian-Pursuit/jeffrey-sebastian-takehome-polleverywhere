@@ -1,0 +1,23 @@
+$color-shadow: #BABECC;
+
+div.Participant-Container{
+    &__Card{
+        border: solid $color-shadow 1px;
+        width: 380px;
+        margin: 20px;
+        box-shadow: 2px 2px 2px gray;
+        border-radius: 10px;
+        font-size: 18px;
+        height: 100px;
+        overflow-y: scroll;
+    }
+    &__Title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__Name, &__Email, &__Phonenumber{
+        margin: 5px;
+    }
+    
+}
